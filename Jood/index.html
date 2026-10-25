@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>مغامرة جود في الإنجليزي</title>
+<meta name="description" content="تدريب جود على الامتحان الشفهي في الإنجليزي للصف الثالث — بالصوت والنطق بالعربي">
+<meta property="og:title" content="مغامرة جود في الإنجليزي 🎤">
+<meta property="og:description" content="تدريب على الامتحان الشفهي (Oral) للصف الثالث: أسئلة عن نفسي، الفصل، الشنطة، السماء، أين العصفور، الحروف، الألوان، الساعة">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#ff7a00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;font-family:'Baloo Bhaijaan 2',Tahoma,sans-serif;background:linear-gradient(160deg,#fff4d6,#ffe1ec 50%,#dff3ff);min-height:100vh;color:#333}
+#app{max-width:560px;margin:0 auto;padding:14px 16px 40px}
+button{font-family:inherit;cursor:pointer;border:none}
+.hero{text-align:center;background:linear-gradient(135deg,#ff7a00,#ff3d7f);color:#fff;border-radius:26px;padding:18px 12px;box-shadow:0 8px 20px rgba(255,61,127,.3)}
+.hero h1{margin:4px 0 0;font-size:1.7rem}
+.hello{font-size:1.15rem}
+.sub{margin:0;opacity:.9}
+.stars{display:inline-block;margin-top:8px;background:rgba(255,255,255,.25);padding:4px 16px;border-radius:20px;font-size:1.1rem}
+.tip{background:#fff;border-radius:16px;padding:10px 14px;margin:14px 0;font-size:.95rem;box-shadow:0 3px 10px rgba(0,0,0,.06)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tile{background:var(--c);color:#fff;border-radius:22px;padding:14px 8px;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:1.05rem;box-shadow:0 6px 0 rgba(0,0,0,.15);transition:transform .1s}
+.tile:active{transform:translateY(4px);box-shadow:0 2px 0 rgba(0,0,0,.15)}
+.tile .ti{font-size:2.4rem;line-height:1.1}
+.tile small{opacity:.9}
+.tile.wide{grid-column:1/-1;font-size:1.25rem}
+.set{text-align:center;margin:16px 0 6px;background:#fff;border-radius:16px;padding:10px}
+.set select{font-family:inherit;font-size:1.1rem;padding:2px 8px;border-radius:10px;border:2px solid #ff7a00}
+.credit{text-align:center;margin-top:14px;color:#7a4a00;font-weight:700;line-height:1.6}
+.top{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.back{background:#fff;border-radius:14px;padding:6px 14px;font-size:1.1rem;box-shadow:0 3px 8px rgba(0,0,0,.08)}
+.top h2{margin:0;font-size:1.35rem;flex:1}
+.tabs{display:flex;gap:8px;margin-bottom:12px}
+.tabs button{flex:1;padding:10px;border-radius:16px;font-size:1.1rem;background:#fff;color:#555;box-shadow:0 3px 8px rgba(0,0,0,.06)}
+.tabs button.on{background:var(--c);color:#fff}
+.note{background:#fffbe0;border:2px dashed #ffb300;border-radius:16px;padding:10px 12px;margin-bottom:12px;font-size:.98rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin-bottom:16px}
+.card{background:#fff;border-radius:20px;padding:10px 6px;display:flex;flex-direction:column;align-items:center;position:relative;box-shadow:0 4px 0 #e8d9c8}
+.card:active{transform:scale(.96)}
+.spk{position:absolute;top:6px;left:8px;font-size:.9rem}
+.pic svg{width:84px;height:84px;display:block}
+.pic .emo{font-size:60px;line-height:1.25;display:block}
+.pic.big svg{width:170px;height:150px}
+.pic.big .emo{font-size:110px}
+.scene svg{width:150px;height:105px}
+.pic.big.scene svg{width:240px;height:168px}
+.glyph{font-size:58px;font-weight:800;color:#1e6fe0;line-height:1.1;direction:ltr}
+.en{font-weight:800;color:#1d3a8a;font-size:1.15rem;direction:ltr;unicode-bidi:isolate}
+.en.big{font-size:1.4rem}
+.tr{color:#d45500;font-weight:700}
+.ar{color:#666;font-size:.95rem}
+h3{margin:16px 0 8px;color:#a0005a}
+.qa{background:#fff;border-radius:20px;padding:12px;margin-bottom:12px;box-shadow:0 4px 0 #e8d9c8}
+.qrow{display:flex;align-items:center;gap:10px}
+.qpic svg{width:80px;height:70px}.qpic .emo{font-size:52px}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;justify-content:center}
+.b{padding:8px 14px;border-radius:14px;color:#fff;font-size:1rem;box-shadow:0 4px 0 rgba(0,0,0,.18)}
+.b:active{transform:translateY(3px);box-shadow:0 1px 0 rgba(0,0,0,.18)}
+.blue{background:#1e88e5}.green{background:#2eaa4a}.orange{background:#ff8f00}.purple{background:#8e44ad}.pink{background:#e91e63}.gray{background:#78909c}
+.bigb{font-size:1.25rem;padding:10px 22px}
+.ans{margin-top:10px;background:#eefaf0;border-radius:16px;padding:10px;text-align:center}
+.hide{display:none}
+.heard{margin-top:6px;font-weight:700}
+.rec{animation:pulse 1s infinite}
+@keyframes pulse{50%{transform:scale(1.08)}}
+.prog{height:12px;background:#fff;border-radius:8px;overflow:hidden;margin-bottom:6px}
+.prog div{height:100%;background:linear-gradient(90deg,#2eaa4a,#9be15d);transition:width .4s}
+.qhead{text-align:center;color:#777;font-size:.95rem}
+.prompt{text-align:center;font-size:1.2rem;font-weight:800;margin:6px 0;color:#a0005a}
+.vis{text-align:center;background:#fff;border-radius:20px;padding:10px;margin:10px 0;box-shadow:0 3px 10px rgba(0,0,0,.06)}
+.vis .row{display:flex;justify-content:center;flex-wrap:wrap;gap:4px}
+.vis .row svg{width:70px;height:70px}
+.bigword{font-size:2.6rem;font-weight:800;color:#1d3a8a;direction:ltr}
+.opts{display:grid;gap:10px;margin-top:10px}
+.opts.pic{grid-template-columns:1fr 1fr}
+.opts.word{grid-template-columns:1fr}
+.opts.letter{grid-template-columns:1fr 1fr}
+.opt{background:#fff;border:3px solid #ffd2a1;border-radius:20px;padding:10px;display:flex;flex-direction:column;align-items:center;min-height:58px;justify-content:center;font-size:1.1rem}
+.opt small{font-size:.85rem}
+.opt.good{background:#c9f5c8;border-color:#2eaa4a}
+.opt.bad{background:#ffdede;border-color:#ff6b6b;opacity:.6;animation:shake .4s}
+@keyframes shake{25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+.hintb{display:block;margin:10px auto 0;background:#fff3c4;color:#7a5200;border-radius:14px;padding:6px 16px}
+.hintbox{margin-top:10px;background:#fff3c4;border-radius:14px;padding:8px 12px;text-align:center}
+.built{min-height:56px;background:#fff;border:3px dashed #8e44ad;border-radius:18px;padding:8px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;justify-content:flex-start;margin-top:10px}
+.built span{background:#8e44ad;color:#fff;padding:4px 12px;border-radius:12px;font-weight:700;font-size:1.15rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:12px}
+.chip{background:#fff;border:3px solid #c39be0;border-radius:14px;padding:6px 14px;font-size:1.2rem;font-weight:800;color:#5a2380}
+.chip.bad{animation:shake .4s;border-color:#ff6b6b}
+.fb{text-align:center;margin-top:12px;font-size:1.15rem;font-weight:800;min-height:30px}
+.fb .ok{color:#2a8a3e}.fb .no{color:#d33}
+.next{margin-top:8px}
+.end{text-align:center;background:#fff;border-radius:26px;padding:22px;box-shadow:0 6px 16px rgba(0,0,0,.08)}
+.end .big{font-size:3.5rem}
+.tbox{background:#fff;border-radius:22px;padding:14px;text-align:center;box-shadow:0 4px 0 #e8d9c8}
+.parent{font-size:.9rem;background:#e8f4ff;border-radius:14px;padding:8px 12px;margin-bottom:10px}
+.saybox{margin:10px 0;font-size:1.1rem;font-weight:800;color:#2a8a3e}
+.grade{display:flex;gap:10px;justify-content:center;margin-top:10px}
+.prac{text-align:right;background:#fff6f6;border-radius:14px;padding:8px 12px;margin-top:10px}
+.burst{position:fixed;font-size:28px;pointer-events:none;animation:fly 1.1s ease-out forwards;z-index:9}
+@keyframes fly{to{transform:translate(var(--x),var(--y)) rotate(200deg);opacity:0}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+const $=s=>document.querySelector(s);
+const app=$('#app');
+let AGE=9,STARS=0;
+try{AGE=+localStorage.getItem('joud_age')||9;STARS=+localStorage.getItem('joud_stars')||0}catch(e){}
+function save(){try{localStorage.setItem('joud_stars',STARS);localStorage.setItem('joud_age',AGE)}catch(e){}}
+function setAge(v){AGE=+v;save()}
+const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const rnd=a=>a[Math.floor(Math.random()*a.length)];
+
+/* ---------- الصوت ---------- */
+let VOICES=[];
+function loadV(){try{VOICES=speechSynthesis.getVoices()}catch(e){}}
+if('speechSynthesis' in window){loadV();speechSynthesis.onvoiceschanged=loadV}
+function enVoice(){return VOICES.find(v=>/en[-_]GB/i.test(v.lang)&&/google/i.test(v.name))||VOICES.find(v=>/en[-_]US/i.test(v.lang)&&/google/i.test(v.name))||VOICES.find(v=>/en[-_](US|GB)/i.test(v.lang))||VOICES.find(v=>/^en/i.test(v.lang))}
+function speak(t,slow){if(!('speechSynthesis' in window)||!t)return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);const v=enVoice();u.lang=v?v.lang:'en-US';if(v)u.voice=v;u.rate=slow?0.55:0.85;u.pitch=1.1;speechSynthesis.speak(u)}
+let AC;
+function tone(f,d,type,when,vol){try{AC=AC||new(window.AudioContext||window.webkitAudioContext)();const o=AC.createOscillator(),g=AC.createGain(),t=AC.currentTime+(when||0);o.type=type||'sine';o.frequency.value=f;g.gain.setValueAtTime(vol||.2,t);g.gain.exponentialRampToValueAtTime(.001,t+d);o.connect(g);g.connect(AC.destination);o.start(t);o.stop(t+d)}catch(e){}}
+function ding(){tone(660,.15,'sine',0);tone(880,.15,'sine',.12);tone(1320,.3,'sine',.24)}
+function buzz(){tone(170,.28,'square',0,.07)}
+function fanfare(){[523,659,784,1047].forEach((f,i)=>tone(f,.25,'triangle',i*.15,.18))}
+function burst(){const em=['⭐','🌟','✨','💖','🎉'];for(let i=0;i<14;i++){const s=document.createElement('span');s.className='burst';s.textContent=rnd(em);s.style.left='50%';s.style.top='45%';s.style.setProperty('--x',(Math.random()*300-150)+'px');s.style.setProperty('--y',(Math.random()*-300+60)+'px');document.body.appendChild(s);setTimeout(()=>s.remove(),1200)}}
+let SAYS=[];const R=t=>{SAYS.push(t);return SAYS.length-1};const S=(k,slow)=>speak(SAYS[k],slow);
+
+/* ---------- التعرّف على الصوت (اختياري) ---------- */
+const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+function matchKeys(t,keys){t=' '+t.toLowerCase().replace(/[^a-z0-9' ]/g,' ')+' ';return keys.every(k=>k.split('|').some(w=>t.includes(' '+w+' ')))}
+function listen(keys,btn,cb){if(!SR)return;let r;try{r=new SR()}catch(e){return}r.lang='en-US';r.interimResults=false;r.maxAlternatives=5;const old=btn.innerHTML;btn.classList.add('rec');btn.innerHTML='🎙️ أسمعك...';let done=false;
+r.onresult=e=>{done=true;const alts=[...e.results[0]].map(a=>a.transcript);cb(alts.some(t=>matchKeys(t,keys)),alts[0])};
+r.onerror=()=>{if(!done){done=true;cb(null,'')}};r.onend=()=>{btn.classList.remove('rec');btn.innerHTML=old;if(!done)cb(null,'')};try{speechSynthesis.cancel();r.start()}catch(e){}}
+
+/* ---------- الصور ---------- */
+const E=e=>`<span class="emo">${e}</span>`;
+const SVG={
+fan:`<svg viewBox="0 0 100 100"><rect x="47" y="2" width="6" height="26" fill="#777"/><ellipse cx="24" cy="44" rx="25" ry="7" fill="#8fd3ff" stroke="#2f7fb8" stroke-width="2"/><ellipse cx="76" cy="44" rx="25" ry="7" fill="#8fd3ff" stroke="#2f7fb8" stroke-width="2"/><ellipse cx="50" cy="64" rx="8" ry="22" fill="#8fd3ff" stroke="#2f7fb8" stroke-width="2"/><circle cx="50" cy="40" r="10" fill="#555"/><circle cx="50" cy="40" r="4" fill="#ddd"/></svg>`,
+desk:`<svg viewBox="0 0 100 100"><rect x="8" y="34" width="84" height="12" rx="3" fill="#c98a4b" stroke="#7a4f22" stroke-width="2"/><rect x="14" y="46" width="8" height="44" fill="#a8703a"/><rect x="78" y="46" width="8" height="44" fill="#a8703a"/><rect x="26" y="46" width="48" height="16" fill="#e0a76a" stroke="#7a4f22" stroke-width="2"/><circle cx="50" cy="54" r="2.5" fill="#7a4f22"/></svg>`,
+board:`<svg viewBox="0 0 100 100"><rect x="6" y="12" width="88" height="60" rx="4" fill="#2f6b45" stroke="#8a5a2b" stroke-width="6"/><path d="M18 30h40M18 43h28M18 56h48" stroke="#fff" stroke-width="3" stroke-linecap="round"/><line x1="32" y1="74" x2="24" y2="96" stroke="#8a5a2b" stroke-width="4"/><line x1="68" y1="74" x2="76" y2="96" stroke="#8a5a2b" stroke-width="4"/></svg>`,
+window:`<svg viewBox="0 0 100 100"><rect x="14" y="8" width="72" height="78" rx="4" fill="#bfe6ff" stroke="#7a4f22" stroke-width="6"/><line x1="50" y1="8" x2="50" y2="86" stroke="#7a4f22" stroke-width="5"/><line x1="14" y1="47" x2="86" y2="47" stroke="#7a4f22" stroke-width="5"/><circle cx="32" cy="28" r="7" fill="#fff"/><rect x="8" y="85" width="84" height="7" rx="2" fill="#a8703a"/></svg>`};
+function bookSVG(c){return `<svg viewBox="0 0 100 100"><rect x="22" y="10" width="58" height="80" rx="6" fill="${c}" stroke="#333" stroke-width="3"/><rect x="22" y="10" width="12" height="80" rx="4" fill="rgba(0,0,0,.18)"/><rect x="42" y="28" width="28" height="10" rx="3" fill="rgba(255,255,255,.75)" stroke="#333" stroke-width="1.5"/></svg>`}
+function clockSVG(h){let n='';for(let i=1;i<=12;i++){const a=i*Math.PI/6;n+=`<text x="${(50+35*Math.sin(a)).toFixed(1)}" y="${(50-35*Math.cos(a)+4).toFixed(1)}" font-size="11" text-anchor="middle" font-weight="800" fill="#333" font-family="Arial">${i}</text>`}
+return `<svg viewBox="0 0 100 100" direction="ltr"><circle cx="50" cy="50" r="46" fill="#fff" stroke="#ff7a00" stroke-width="6"/>${n}<line x1="50" y1="50" x2="50" y2="18" stroke="#1e88e5" stroke-width="3.5" stroke-linecap="round"/><line x1="50" y1="50" x2="50" y2="31" stroke="#e53935" stroke-width="6" stroke-linecap="round" transform="rotate(${h*30} 50 50)"/><circle cx="50" cy="50" r="4" fill="#333"/></svg>`}
+function bird(x,y,s,c){c=c||'#2f7de1';s=s||1;return `<g transform="translate(${x} ${y}) scale(${s})"><polygon points="-15,0 -30,-7 -28,7" fill="${c}"/><line x1="-4" y1="12" x2="-6" y2="20" stroke="#e08a00" stroke-width="2.5"/><line x1="4" y1="12" x2="6" y2="20" stroke="#e08a00" stroke-width="2.5"/><ellipse cx="0" cy="0" rx="18" ry="14" fill="${c}"/><ellipse cx="-4" cy="2" rx="10" ry="7" fill="rgba(0,0,0,.2)"/><circle cx="14" cy="-12" r="10" fill="${c}"/><circle cx="17" cy="-14" r="3.8" fill="#fff"/><circle cx="18" cy="-14" r="1.9" fill="#000"/><polygon points="23,-12 33,-9 23,-6" fill="#ff9800"/></g>`}
+function box(x,y,w,h){return `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="#d39552" stroke="#8a5a2b" stroke-width="3"/><rect x="${x+w/2-6}" y="${y}" width="12" height="${h}" fill="#ecc791" opacity=".8"/><line x1="${x}" y1="${y+12}" x2="${x+w}" y2="${y+12}" stroke="#8a5a2b" stroke-width="2"/>`}
+function table(){return `<rect x="38" y="56" width="124" height="11" rx="2" fill="#b5651d" stroke="#6d3b0d" stroke-width="2"/><rect x="44" y="67" width="9" height="65" fill="#8b4513"/><rect x="147" y="67" width="9" height="65" fill="#8b4513"/>`}
+function scene(p,obj){let g='';const gr=`<line x1="5" y1="133" x2="195" y2="133" stroke="#9ccc65" stroke-width="5" stroke-linecap="round"/>`;
+if(obj==='table'){g=p==='on'?table()+bird(100,36):table()+bird(100,113)}
+else if(p==='on')g=box(65,72,70,60)+bird(100,51);
+else if(p==='in')g=`<polygon points="65,80 40,68 54,58 74,80" fill="#c07f3e" stroke="#8a5a2b" stroke-width="2"/><polygon points="135,80 160,68 146,58 126,80" fill="#c07f3e" stroke="#8a5a2b" stroke-width="2"/><rect x="65" y="74" width="70" height="8" fill="#6b4220"/>`+bird(100,76)+`<rect x="65" y="80" width="70" height="52" fill="#d39552" stroke="#8a5a2b" stroke-width="3"/><rect x="94" y="80" width="12" height="52" fill="#ecc791" opacity=".8"/>`;
+else if(p==='in front of')g=box(62,58,76,74)+bird(100,112,1.1);
+else if(p==='behind')g=bird(134,70)+box(52,58,82,74);
+else if(p==='next to')g=box(30,62,70,70)+bird(150,113);
+return `<svg viewBox="0 0 200 140">${gr}${g}</svg>`}
+
+/* ---------- المحتوى ---------- */
+const NUMS={1:["one","وَن"],2:["two","تو"],3:["three","ثري"],4:["four","فور"],5:["five","فايف"],6:["six","سِكس"],7:["seven","سِفِن"],8:["eight","إيت"],9:["nine","ناين"],10:["ten","تِن"],11:["eleven","إلِفِن"],12:["twelve","تْوِلف"]};
+const AR_AGE={7:"سبع سنوات",8:"ثماني سنوات",9:"تسع سنوات",10:"عشر سنوات",11:"إحدى عشرة سنة"};
+const AR_H=["","الواحدة","الثانية","الثالثة","الرابعة","الخامسة","السادسة","السابعة","الثامنة","التاسعة","العاشرة","الحادية عشرة","الثانية عشرة"];
+const CLASS=[
+{en:"fan",tr:"فان",ar:"مروحة",pic:SVG.fan},{en:"door",tr:"دور",ar:"باب",pic:E("🚪")},
+{en:"desk",tr:"دِسك",ar:"درج / طاولة",pic:SVG.desk},{en:"window",tr:"ويندو",ar:"شبّاك",pic:SVG.window},
+{en:"wall",tr:"وول",ar:"حائط",pic:E("🧱")},{en:"lamp",tr:"لامب",ar:"لمبة",pic:E("💡")},
+{en:"board",tr:"بورد",ar:"سبّورة",pic:SVG.board},{en:"basket",tr:"باسكِت",ar:"سلّة",pic:E("🧺")}];
+const BAG=[{en:"book",tr:"بوك",ar:"كتاب",pic:E("📕")},{en:"pen",tr:"بِن",ar:"قلم حبر",pic:E("🖊️")},{en:"pencil",tr:"بِنسِل",ar:"قلم رصاص",pic:E("✏️")},{en:"bag",tr:"باق",ar:"شنطة",pic:E("🎒")}];
+const SKY=[{en:"a star",tr:"أ ستار",ar:"نجمة",pic:E("⭐")},{en:"the sun",tr:"ذا صن",ar:"الشمس",pic:E("☀️")},{en:"the moon",tr:"ذا مون",ar:"القمر",pic:E("🌙")}];
+const COLS=[["red","رِد","أحمر","#e53935"],["blue","بلو","أزرق","#1e6fe0"],["green","قرين","أخضر","#2e9d46"],["yellow","يلو","أصفر","#ffd21f"],["black","بلاك","أسود","#222"],["white","وايت","أبيض","#ffffff"]].map(([en,tr,ar,c])=>({en,tr,ar,pic:bookSVG(c)}));
+const PREPS=[{p:"on",tr:"أون",ar:"فوق",o:"box"},{p:"under",tr:"أندَر",ar:"تحت",o:"table"},{p:"in",tr:"إن",ar:"داخل",o:"box"},{p:"in front of",tr:"إن فرونت أوف",ar:"أمام",o:"box"},{p:"behind",tr:"بِهايند",ar:"خلف / وراء",o:"box"},{p:"next to",tr:"نِكست تو",ar:"بجانب",o:"box"}].map(x=>({...x,pic:`<div class="scene">${scene(x.p,x.o)}</div>`,en:`The bird is ${x.p} the ${x.o}.`,str:`ذا بيرد إز ${x.tr} ذا ${x.o==='box'?'بوكس':'تيبِل'}`,sar:`العصفور ${x.ar} ${x.o==='box'?'الصندوق':'الطاولة'}`}));
+const PREP_ON_TABLE={p:"on",tr:"أون",ar:"فوق",o:"table",pic:`<div class="scene">${scene('on','table')}</div>`,en:"The bird is on the table.",str:"ذا بيرد إز أون ذا تيبِل",sar:"العصفور فوق الطاولة"};
+const nameSay={A:"ay",B:"bee",C:"see",D:"dee",E:"ee",F:"ef",G:"jee",H:"aitch",I:"eye",J:"jay",K:"kay",L:"el",M:"em",N:"en",O:"oh",P:"pee",Q:"cue",R:"are",S:"ess",T:"tee",U:"you",V:"vee",W:"double you",X:"ex",Y:"why",Z:"zed"};
+const LETTERS=[["A","إي","أَ","apple","آبِل","🍎"],["B","بي","بْ","ball","بول","⚽"],["C","سي","كْ","cat","كات","🐱"],["D","دي","دْ","dog","دوق","🐶"],["E","إي","إِ","egg","إق","🥚"],["F","إف","فْ","fish","فِش","🐟"],["G","جي","قْ (مثل ق السودانية)","goat","قوت","🐐"],["H","إيتش","هْ","hat","هات","🎩"],["I","آي","إِ","insect","إنسِكت","🐞"],["J","جيه","جْ","juice","جوس","🧃"],["K","كيه","كْ","kite","كايت","🪁"],["L","إل","لْ","lion","لايون","🦁"],["M","إم","مْ","moon","مون","🌙"],["N","إن","نْ","nose","نوز","👃"],["O","أو","أُ","orange","أورِنج","🍊"],["P","پي","پْ (باء مع نفخة هواء)","pen","پِن","🖊️"],["Q","كيو","كْو","queen","كوين","👸"],["R","آر","رْ","rabbit","رابِت","🐰"],["S","إس","سْ","sun","صن","☀️"],["T","تي","تْ","tree","تري","🌳"],["U","يو","أَ","umbrella","أمبريلا","☂️"],["V","ڤي","ڤْ (فاء بصوت)","van","ڤان","🚐"],["W","دَبِليو","وْ","watch","واتش","⌚"],["X","إكس","كْس","box","بوكس","📦"],["Y","واي","يْ","yo-yo","يويو","🪀"],["Z","زِد","زْ","zebra","زيبرا","🦓"]].map(([L,n,s,w,wt,e])=>({L,n,s,w,wt,e,say:nameSay[L]}));
+const DIG=[{d:"ch",s:"تش",w:"chair",wt:"تشير",e:"🪑"},{d:"sh",s:"ش",w:"ship",wt:"شِب",e:"🚢"},{d:"th",s:"ث",w:"three",wt:"ثري",e:"3️⃣"},{d:"th",s:"ذ",w:"the",wt:"ذا",e:"👉"},{d:"ph",s:"ف",w:"phone",wt:"فون",e:"📱"}];
+const TIMES=[...Array(12)].map((_,i)=>{const h=i+1;return {h,en:`It is ${NUMS[h][0]} o'clock.`,tr:`إت إز ${NUMS[h][1]} أو كلوك`,ar:`الساعة ${AR_H[h]}`,pic:clockSVG(h)}});
+
+function QA(){const n=NUMS[AGE];return {
+me:[
+{q:"Hello!",qtr:"هيلو!",qar:"مرحبًا!",a:"Hello!",atr:"هيلو!",aar:"مرحبًا!",keys:["hello|hi"]},
+{q:"What's your name?",qtr:"وتس يور نيم؟",qar:"ما اسمك؟",a:"My name is Joud.",asay:"My name is Jood.",atr:"ماي نيم إز جود",aar:"اسمي جود.",keys:["name"]},
+{q:"How are you?",qtr:"هاو آر يو؟",qar:"كيف حالك؟",a:"I'm fine, thank you.",atr:"آيم فاين، ثانك يو",aar:"أنا بخير، شكرًا.",keys:["fine"]},
+{q:"How old are you?",qtr:"هاو أولد آر يو؟",qar:"كم عمرك؟",a:`I'm ${AGE} years old.`,asay:`I'm ${n[0]} years old.`,atr:`آيم ${n[1]} ييرز أولد`,aar:`عمري ${AR_AGE[AGE]}.`,keys:[`${n[0]}|${AGE}`]},
+{q:"Where are you from?",qtr:"وير آر يو فروم؟",qar:"من أين أنتِ؟",a:"I am from Sudan.",atr:"آي آم فروم سودان",aar:"أنا من السودان.",keys:["sudan"]},
+{q:"Are you Sudanese?",qtr:"آر يو سودانيز؟",qar:"هل أنتِ سودانية؟",a:"Yes, I am.",atr:"يِس، آي آم",aar:"نعم، أنا سودانية.",keys:["yes"]},
+{q:"What class are you in?",qtr:"وت كلاس آر يو إن؟",qar:"في أي صف أنتِ؟",a:"I am in class three.",atr:"آي آم إن كلاس ثري",aar:"أنا في الصف الثالث.",keys:["three|3"]},
+{q:"In which grade are you in?",qtr:"إن وِتش قريد آر يو إن؟",qar:"في أي صف أنتِ؟",a:"I'm in grade 3.",asay:"I'm in grade three.",atr:"آيم إن قريد ثري",aar:"أنا في الصف الثالث.",keys:["three|3"]},
+{q:"Have you got a book?",qtr:"هاف يو قوت أ بوك؟",qar:"هل عندك كتاب؟",a:"Yes, I have.",atr:"يِس، آي هاف",aar:"نعم، عندي.",keys:["yes"]}],
+class:[
+{q:"What is in the class?",qtr:"وت إز إن ذا كلاس؟",qar:"ماذا يوجد في الفصل؟",a:"There is a door, a window and a board.",atr:"ذير إز أ دور، أ ويندو آند أ بورد",aar:"يوجد باب وشبّاك وسبّورة.",keys:["door|window|board|desk|fan|lamp|basket|wall"]},
+{q:"What can you see in the class?",qtr:"وت كان يو سي إن ذا كلاس؟",qar:"ماذا ترين في الفصل؟",a:"I can see a door.",atr:"آي كان سي أ دور",aar:"أرى بابًا.",keys:["see","door|window|board|desk|fan|lamp|basket|wall"]},
+{q:"How many windows are there in the class?",qtr:"هاو مِني ويندوز آر ذير إن ذا كلاس؟",qar:"كم شبّاكًا في الفصل؟",a:"There are 2 windows in the class.",asay:"There are two windows in the class.",atr:"ذير آر تو ويندوز إن ذا كلاس",aar:"يوجد شبّاكان في الفصل.",keys:["two|2|to|too","windows"]},
+{q:"How many fans are there in the class?",qtr:"هاو مِني فانز آر ذير إن ذا كلاس؟",qar:"كم مروحة في الفصل؟",a:"There is 1 fan in the class.",asay:"There is one fan in the class.",atr:"ذير إز وَن فان إن ذا كلاس",aar:"توجد مروحة واحدة في الفصل.",keys:["one|1","fan"]}],
+bag:[
+{q:"What is in the bag?",qtr:"وت إز إن ذا باق؟",qar:"ماذا يوجد في الشنطة؟",a:"There is a book, a pen and a pencil.",atr:"ذير إز أ بوك، أ پِن آند أ پِنسِل",aar:"يوجد كتاب وقلم حبر وقلم رصاص.",keys:["book|pen|pencil"]},
+{q:"Have you got a book?",qtr:"هاف يو قوت أ بوك؟",qar:"هل عندك كتاب؟",a:"Yes, I have.",atr:"يِس، آي هاف",aar:"نعم، عندي.",keys:["yes"]}],
+sky:[
+{q:"What is in the sky?",qtr:"وت إز إن ذا سكاي؟",qar:"ماذا يوجد في السماء؟",a:"A star, the sun and the moon.",atr:"أ ستار، ذا صن آند ذا مون",aar:"نجمة والشمس والقمر.",keys:["star|sun|moon"]}],
+bird:[
+{q:"Where is the bird?",qtr:"وير إز ذا بيرد؟",qar:"أين العصفور؟",pic:PREPS[0].pic,a:"The bird is on the box.",atr:"ذا بيرد إز أون ذا بوكس",aar:"العصفور فوق الصندوق.",keys:["on","box"]}],
+colours:[
+{q:"What colour is it?",qtr:"وت كَلَر إز إت؟",qar:"ما لونه؟",pic:COLS[0].pic,a:"It is red.",atr:"إت إز رِد",aar:"لونه أحمر.",keys:["red"]}],
+time:[
+{q:"What is the time?",qtr:"وت إز ذا تايم؟",qar:"كم الساعة؟",pic:TIMES[2].pic,a:"It is three o'clock.",atr:"إت إز ثري أو كلوك",aar:"الساعة الثالثة.",keys:["three|3"]}]
+}}
+function ALLQA(){return Object.values(QA()).flat()}
+
+/* ---------- مولّدات الأسئلة ---------- */
+const picOpt=x=>`<div class="pic">${x.pic}</div>`;
+const wordOpt=x=>`<span class="en">${x.en}</span>`;
+function mkOpts(pool,t,n,fn){const list=shuffle([t,...shuffle(pool.filter(x=>x!==t&&x.en!==t.en)).slice(0,n-1)]);return {list,opts:list.map(x=>({html:fn(x),val:x===t}))}}
+const hintOf=list=>list.map(x=>`<span class="en">${x.en}</span> = <span class="tr">${x.tr}</span>`).join('<br>');
+function qListen(pool,t,phrase,prompt){const m=mkOpts(pool,t,Math.min(4,pool.length),picOpt);return {kind:'pick',prompt:prompt||'🎧 اسمعي الكلمة واختاري الصورة الصحيحة',audio:phrase||t.say||t.en,opts:m.opts,optType:'pic',after:t.say||t.en,show:t.en}}
+function qPicWord(pool,t,prompt){const m=mkOpts(pool,t,Math.min(4,pool.length),wordOpt);return {kind:'pick',prompt:prompt||'🖼️ ما اسم هذه الصورة؟ اختاري الكلمة',visual:`<div class="pic big">${t.pic}</div>`,opts:m.opts,optType:'word',hint:hintOf(m.list),after:t.say||t.en,show:t.en}}
+function qWordPic(pool,t){const m=mkOpts(pool,t,Math.min(4,pool.length),picOpt);return {kind:'pick',prompt:'📖 Read this word — اقرئي الكلمة واختاري صورتها',visual:`<div class="bigword">${t.en}</div>`,opts:m.opts,optType:'pic',hint:`تُنطق: <span class="tr">${t.tr}</span>`,after:t.say||t.en,show:t.en}}
+function qQA(q,pool,visual){pool=pool||ALLQA();const others=shuffle(pool.filter(o=>o.a!==q.a)).slice(0,2);const list=shuffle([q,...others]);return {kind:'pick',prompt:'❓ اسمعي السؤال واختاري الإجابة الصحيحة',audio:q.qsay||q.q,visual:(visual||(q.pic?`<div class="pic big">${q.pic}</div>`:''))+`<div class="en big">${q.q}</div><div class="tr">${q.qtr}</div><div class="ar">${q.qar}</div>`,opts:list.map(o=>({html:`<span class="en">${o.a}</span><small class="tr">${o.atr}</small>`,val:o===q})),optType:'word',after:q.asay||q.a,show:q.a}}
+function qOrder(text,say,tr,ar,pic){return {kind:'order',prompt:'🧩 رتّبي الكلمات لتكوّني الجملة',audio:say||text,visual:(pic?`<div class="pic">${pic}</div>`:'')+`<div class="ar">${ar}</div><div class="tr">${tr}</div>`,words:text.replace(/[.,!?]/g,'').split(' '),after:say||text,show:text}}
+function sentObj(o,k){return k===1?`There is 1 ${o}.`:`There are ${k} ${o}s.`}
+function qHowMany(){const o=rnd(['window','fan']);const k=1+Math.floor(Math.random()*3);const ks=shuffle([1,2,3]);const pic=o==='window'?SVG.window:SVG.fan;const say=x=>x===1?`There is one ${o}.`:`There are ${NUMS[x][0]} ${o}s.`;
+return {kind:'pick',prompt:'🔢 How many? — كم العدد؟ عدّي واختاري',audio:`How many ${o}s are there?`,visual:`<div class="row">${pic.repeat(k)}</div><div class="en">How many ${o}s are there?</div><div class="tr">هاو مِني ${o==='window'?'ويندوز':'فانز'} آر ذير؟</div>`,opts:ks.map(x=>({html:`<span class="en">${sentObj(o,x)}</span>`,val:x===k})),optType:'word',hint:'💡 نقول <b>is</b> لشيء واحد (1)، ونقول <b>are</b> لأكثر من واحد.',after:say(k),show:sentObj(o,k)}}
+function qWhatIsThis(pool,t){const m=mkOpts(pool,t,Math.min(4,pool.length),x=>`<span class="en">This is a ${x.en}.</span>`);return {kind:'pick',prompt:'❓ What is this? — ما هذا؟',audio:'What is this?',visual:`<div class="pic big">${t.pic}</div><div class="en">What is this?</div><div class="tr">وت إز ذِس؟</div>`,opts:m.opts,optType:'word',hint:hintOf(m.list),after:`This is a ${t.en}.`,show:`This is a ${t.en}.`}}
+function qColour(t){const m=mkOpts(COLS,t,3,x=>`<span class="en">It is ${x.en}.</span>`);return {kind:'pick',prompt:'🎨 What colour is it? — ما لونه؟',audio:'What colour is it?',visual:`<div class="pic big">${t.pic}</div><div class="en">What colour is it?</div><div class="tr">وت كَلَر إز إت؟</div>`,opts:m.opts,optType:'word',hint:hintOf(m.list),after:`It is ${t.en}.`,show:`It is ${t.en}.`}}
+function qClock(t){const m=mkOpts(TIMES,t,3,x=>`<span class="en">${x.en}</span>`);return {kind:'pick',prompt:'🕒 What is the time? — كم الساعة؟',audio:'What is the time?',visual:`<div class="pic big">${t.pic}</div>`,opts:m.opts,optType:'word',hint:hintOf(m.list),after:t.en,show:t.en}}
+function qScenePick(t){const m=mkOpts(PREPS,t,3,picOpt);return {kind:'pick',prompt:'🎧 Where is the bird? اسمعي واختاري الصورة',audio:t.en,visual:`<div class="en">${t.en}</div><div class="tr">${t.str}</div>`,opts:m.opts,optType:'pic',after:t.en,show:t.en}}
+function qSceneWord(t){const m=mkOpts(PREPS,t,4,x=>`<span class="en">${x.p}</span>`);return {kind:'pick',prompt:'🐦 Where is the bird? — أين العصفور؟',audio:'Where is the bird?',visual:`<div class="pic big scene">${scene(t.p,t.o)}</div><div class="en">The bird is ...... the ${t.o}.</div>`,opts:m.opts,optType:'word',hint:m.list.map(x=>`<span class="en">${x.p}</span> = <span class="tr">${x.tr}</span> (${x.ar})`).join('<br>'),after:t.en,show:t.en}}
+function qLetter(t){const list=shuffle([t,...shuffle(LETTERS.filter(x=>x!==t)).slice(0,3)]);return {kind:'pick',prompt:'🔤 What is this letter? اسمعي واختاري الحرف',audio:t.say,opts:list.map(x=>({html:`<span class="glyph">${x.L}${x.L.toLowerCase()}</span>`,val:x===t})),optType:'letter',after:`${t.say}. ${t.w}.`,show:`${t.L} — ${t.w}`}}
+function qLetterWord(t){const list=shuffle([t,...shuffle(LETTERS.filter(x=>x!==t)).slice(0,3)]);return {kind:'pick',prompt:'🔤 اختاري الصورة التي تبدأ بهذا الحرف',audio:t.say,visual:`<div class="glyph" style="font-size:80px">${t.L}${t.L.toLowerCase()}</div><div class="tr">يُقرأ: ${t.n} — صوته: ${t.s}</div>`,opts:list.map(x=>({html:`<div class="pic">${E(x.e)}</div>`,val:x===t})),optType:'pic',after:`${t.say}. ${t.w}.`,show:`${t.L} — ${t.w}`}}
+function qDig(t){return {kind:'pick',prompt:'🔊 حرفان = صوت واحد! اسمعي الكلمة: بأي حرفين تبدأ؟',audio:t.w,visual:`<div class="pic big">${E(t.e)}</div><div class="tr">${t.wt}</div>`,opts:shuffle(['ch','sh','th','ph']).map(d=>({html:`<span class="glyph" style="font-size:44px">${d}</span>`,val:d===t.d})),optType:'letter',after:t.w,show:t.w}}
+function take(gen,arr,n){return shuffle(arr).slice(0,n).map(gen)}
+
+/* ---------- الأقسام ---------- */
+const vocab=it=>({pic:it.pic,en:it.en,tr:it.tr,ar:it.ar,say:it.say||it.en});
+const SECTIONS=[
+{id:'me',icon:'🗣️',title:'أسئلة عن نفسي',en:'About me',c:'#ff7a00',
+ note:'هذه أسئلة الامتحان الشفهي. اسمعي السؤال 🔊، ثم حاولي الإجابة بصوت عالٍ، ثم اضغطي 👀 لتسمعي الإجابة الصحيحة.',
+ items:()=>[],qa:()=>QA().me,
+ game:()=>{const q=QA().me;return shuffle([...take(x=>qQA(x,q),q,6),...take(x=>qOrder(x.a,x.asay,x.atr,x.aar),q.filter(x=>x.a.split(' ').length>2),2)])}},
+{id:'class',icon:'🏫',title:'في الفصل',en:'In the class',c:'#1e88e5',
+ note:'💡 <b>There is</b> (ذير إز) لشيء واحد، و<b>There are</b> (ذير آر) لأكثر من واحد.<br>مثال: There is 1 fan — There are 2 windows.',
+ items:()=>CLASS.map(vocab),qa:()=>QA().class,
+ game:()=>shuffle([...take(t=>qListen(CLASS,t,`Point to the ${t.en}.`,'👉 Point to... = أشيري إلى... اسمعي واختاري'),CLASS,2),...take(t=>qPicWord(CLASS,t),CLASS,2),...take(t=>qWordPic(CLASS,t),CLASS,1),qHowMany(),qHowMany(),(t=>qOrder(`I can see a ${t.en}.`,null,`آي كان سي أ ${t.tr}`,`أرى ${t.ar}`,t.pic))(rnd(CLASS))])},
+{id:'bag',icon:'🎒',title:'في الشنطة',en:'In the bag',c:'#2eaa4a',
+ note:'نقول <b>a</b> (أ) قبل الشيء الواحد: a book, a pen, a pencil.',
+ items:()=>BAG.map(vocab),qa:()=>QA().bag,
+ game:()=>{const q=QA().bag[0];return shuffle([...take(t=>qListen(BAG,t),BAG,2),...take(t=>qPicWord(BAG,t),BAG,2),...take(t=>qWordPic(BAG,t),BAG,1),...take(t=>qWhatIsThis(BAG,t),BAG,1),qQA(q),qOrder(q.a,null,q.atr,q.aar,E('🎒'))])}},
+{id:'sky',icon:'🌙',title:'في السماء',en:'In the sky',c:'#5c6bc0',
+ note:'💡 نقول <b>a star</b> لأن النجوم كثيرة، ونقول <b>the sun</b> و<b>the moon</b> لأنه توجد شمس واحدة وقمر واحد.',
+ items:()=>SKY.map(vocab),qa:()=>QA().sky,
+ game:()=>{const q=QA().sky[0];return shuffle([...take(t=>qListen(SKY,t),SKY,2),...take(t=>qPicWord(SKY,t),SKY,2),...take(t=>qWordPic(SKY,t),SKY,2),qQA(q),qOrder(q.a,null,q.atr,q.aar,E('🌌'))])}},
+{id:'bird',icon:'🐦',title:'أين العصفور؟',en:'Where is the bird?',c:'#e91e63',
+ note:'كلمات المكان: <span class="en">under - on - in front of - behind - in - next to</span>',
+ items:()=>[...PREPS,PREP_ON_TABLE].map(x=>({pic:x.pic,en:x.p,tr:x.tr,ar:x.ar+' — '+x.sar,say:x.en})),qa:()=>QA().bird,
+ game:()=>shuffle([...take(qScenePick,PREPS,3),...take(qSceneWord,PREPS,3),...take(t=>qOrder(t.en,null,t.str,t.sar,t.pic),PREPS,2)])},
+{id:'letters',icon:'🔤',title:'الحروف وأصواتها',en:'Letters & sounds',c:'#8e44ad',
+ note:'اضغطي على الحرف لتسمعي اسمه وكلمة تبدأ به. تحت كل حرف: اسمه، وصوته بالعربي.',
+ items:()=>[],qa:()=>[],
+ game:()=>shuffle([...take(qLetter,LETTERS,3),...take(qLetterWord,LETTERS,2),...take(qDig,DIG,3)])},
+{id:'colours',icon:'🎨',title:'الألوان',en:'Colours',c:'#00acc1',
+ note:'السؤال: <span class="en">What colour is it?</span> — الإجابة: <span class="en">It is red.</span>',
+ items:()=>COLS.map(x=>({...vocab(x),say:`It is ${x.en}.`})),qa:()=>QA().colours,
+ game:()=>shuffle([...take(t=>qListen(COLS,t),COLS,3),...take(qColour,COLS,3),...take(t=>qOrder(`It is ${t.en}.`,null,`إت إز ${t.tr}`,`لونه ${t.ar}`,t.pic),COLS,2)])},
+{id:'time',icon:'🕒',title:'كم الساعة؟',en:'The time',c:'#f4511e',
+ note:'السؤال: <span class="en">What is the time?</span> — الإجابة: <span class="en">It is three o\'clock.</span><br>العقرب الأحمر القصير يشير إلى الساعة.',
+ items:()=>TIMES.map(t=>({pic:t.pic,en:t.en,tr:t.tr,ar:t.ar,say:t.en})),qa:()=>QA().time,
+ game:()=>shuffle([...take(qClock,TIMES,3),...take(t=>qListen(TIMES,t,t.en,'🎧 اسمعي واختاري الساعة الصحيحة'),TIMES,3),...take(t=>qOrder(t.en,null,t.tr,t.ar,t.pic),TIMES,2)])},
+{id:'test',icon:'🎤',title:'الامتحان الشفهي',en:'Oral test',c:'linear-gradient(135deg,#ff3d7f,#ff7a00)',wide:true}];
+
+/* ---------- الصفحة الرئيسية ---------- */
+function stop(){try{speechSynthesis.cancel()}catch(e){}}
+function home(){stop();SAYS=[];
+app.innerHTML=`<div class="hero"><div class="hello">👋 أهلًا يا <b>جود</b></div><h1>مغامرة جود في الإنجليزي</h1><p class="sub" dir="ltr">English Oral Test · Class 3</p><div class="stars">⭐ نجومك: <b>${STARS}</b></div></div>
+<div class="tip">🔊 اضغطي على أي كلمة لتسمعيها. تحت كل كلمة إنجليزية طريقة نطقها <span class="tr">بالحروف العربية</span>.</div>
+<div class="grid">${SECTIONS.map((s,i)=>`<button class="tile ${s.wide?'wide':''}" style="--c:${s.c};background:${s.c}" onclick="openSec(${i})"><span class="ti">${s.icon}</span><b>${s.title}</b><small dir="ltr">${s.en}</small></button>`).join('')}</div>
+<div class="set">🎂 عمر جود: <select onchange="setAge(this.value)">${[7,8,9,10,11].map(a=>`<option ${a==AGE?'selected':''}>${a}</option>`).join('')}</select> سنوات</div>
+<div class="credit">مع تحيات سليمان جميل<br><span dir="ltr">0097451085117</span></div>`;scrollTo(0,0)}
+function openSec(i){const s=SECTIONS[i];if(s.id==='test')return startTest();secView(i,'learn')}
+
+/* ---------- تعلّمي ---------- */
+let QAS=[];
+function secView(i,tab){stop();SAYS=[];const s=SECTIONS[i];
+app.innerHTML=`<div class="top"><button class="back" onclick="home()">→ رجوع</button><h2>${s.icon} ${s.title}</h2></div>
+<div class="tabs" style="--c:${s.c}"><button class="${tab==='learn'?'on':''}" onclick="secView(${i},'learn')">📖 تعلّمي</button><button class="${tab==='game'?'on':''}" onclick="secView(${i},'game')">🎮 العبي</button></div><div id="gbox"></div>`;
+if(tab==='game')return startGame(i);
+let h=s.note?`<div class="note">${s.note}</div>`:'';
+if(s.id==='letters'){
+ h+=`<div class="cards">${LETTERS.map(l=>`<button class="card" onclick="S(${R(`${l.say}. ${l.w}.`)})"><span class="spk">🔊</span><span class="glyph">${l.L}${l.L.toLowerCase()}</span><div class="tr">اسمه: ${l.n}</div><div class="ar">صوته: ${l.s}</div><div style="font-size:30px">${l.e}</div><div class="en">${l.w}</div><div class="tr">${l.wt}</div></button>`).join('')}</div>
+ <h3>✌️ حرفان ← صوت واحد</h3><div class="cards">${DIG.map(d=>`<button class="card" onclick="S(${R(d.w)})"><span class="spk">🔊</span><span class="glyph" style="font-size:46px">${d.d}</span><div class="tr" style="font-size:1.3rem">= ${d.s}</div><div style="font-size:34px">${d.e}</div><div class="en">${d.w}</div><div class="tr">${d.wt}</div></button>`).join('')}</div>
+ <h3>❓ أسئلة الامتحان</h3>`;
+ QAS=[{q:"What is this letter?",qtr:"وت إز ذِس لِتَر؟",qar:"ما هذا الحرف؟",pic:`<span class="glyph">Bb</span>`,a:"B",asay:"bee",atr:"بي",aar:"هذا حرف B.",keys:["b|bee|be"]},{q:"Read this word.",qtr:"ريد ذِس وِرد",qar:"اقرئي هذه الكلمة.",pic:`<span class="en" style="font-size:1.6rem">ship</span>`,a:"ship",atr:"شِب",aar:"سفينة",keys:["ship"]}];
+}else{
+ const it=s.items();
+ if(it.length)h+=`<div class="cards">${it.map(x=>`<button class="card" onclick="S(${R(x.say)})"><span class="spk">🔊</span><div class="pic">${x.pic}</div><div class="en">${x.en}</div><div class="tr">${x.tr}</div><div class="ar">${x.ar}</div></button>`).join('')}</div>`;
+ QAS=s.qa();if(QAS.length&&it.length)h+=`<h3>❓ أسئلة الامتحان</h3>`;
+}
+h+=QAS.map(qaCard).join('');
+h+=`<div class="btns"><button class="b pink bigb" onclick="secView(${i},'game')">🎮 هيا نلعب!</button></div>`;
+$('#gbox').innerHTML=h;scrollTo(0,0)}
+function qaCard(q,k){return `<div class="qa"><div class="qrow">${q.pic?`<div class="qpic pic">${q.pic}</div>`:''}<div><div class="en big">${q.q}</div><div class="tr">${q.qtr}</div><div class="ar">${q.qar}</div></div></div>
+<div class="btns"><button class="b blue" onclick="S(${R(q.qsay||q.q)})">🔊 السؤال</button><button class="b green" onclick="reveal(${k})">👀 الإجابة</button></div>
+<div class="ans hide" id="ans${k}"><div class="en big">${q.a}</div><div class="tr">${q.atr}</div><div class="ar">${q.aar}</div>
+<div class="btns"><button class="b orange" onclick="S(${R(q.asay||q.a)})">🔊 اسمعي</button><button class="b purple" onclick="S(${R(q.asay||q.a)},1)">🐢 ببطء</button>${SR&&q.keys?`<button class="b pink" onclick="micTry(this,${k})">🎙️ قولي أنتِ</button>`:''}</div><div class="heard" id="heard${k}"></div></div></div>`}
+function reveal(k){const el=$('#ans'+k);el.classList.remove('hide');speak(QAS[k].asay||QAS[k].a)}
+function micTry(btn,k){const hd=$('#heard'+k);hd.textContent='';listen(QAS[k].keys,btn,(ok,t)=>{if(ok){ding();burst();STARS++;save();hd.innerHTML=`<span style="color:#2a8a3e">🌟 ممتاز يا جود! سمعتك تقولين: <span class="en">"${t}"</span></span>`}else if(ok===null){hd.innerHTML='🎙️ لم أسمع جيدًا، اضغطي وتكلمي بصوت أعلى'}else{buzz();hd.innerHTML=`سمعت: <span class="en">"${t}"</span> — حاولي مرة ثانية 💪`}})}
+
+/* ---------- العبي ---------- */
+let GAME={};
+function startGame(i){GAME={sec:i,qs:SECTIONS[i].game(),i:0,score:0};renderQ()}
+function renderQ(){const g=GAME,q=g.qs[g.i];g.first=true;g.done=false;g.next=0;
+let h=`<div class="prog"><div style="width:${g.i/g.qs.length*100}%"></div></div><div class="qhead">سؤال ${g.i+1} من ${g.qs.length} · ⭐ ${g.score}</div><div class="prompt">${q.prompt}</div>`;
+if(q.audio)h+=`<div class="btns"><button class="b blue bigb" onclick="S(${R(q.audio)})">🔊 اسمعي</button><button class="b purple" onclick="S(${R(q.audio)},1)">🐢 ببطء</button></div>`;
+if(q.visual)h+=`<div class="vis">${q.visual}</div>`;
+if(q.kind==='pick'){h+=`<div class="opts ${q.optType}">${q.opts.map((o,j)=>`<button class="opt" id="o${j}" ${q.optType==='word'?'dir="ltr"':''} onclick="pick(${j})">${o.html}</button>`).join('')}</div>`;if(q.hint)h+=`<button class="hintb" id="hb" onclick="showHint()">💡 مساعدة</button>`}
+else h+=`<div class="built" id="built" dir="ltr"></div><div class="chips" dir="ltr">${shuffle(q.words.map((w,j)=>({w,j}))).map(c=>`<button class="chip" onclick="chip(this)">${c.w}</button>`).join('')}</div>`;
+h+=`<div class="fb" id="fb"></div>`;$('#gbox').innerHTML=h;if(q.audio)setTimeout(()=>speak(q.audio),350)}
+function showHint(){const b=$('#hb');b.outerHTML=`<div class="hintbox">${GAME.qs[GAME.i].hint}</div>`}
+function pick(j){const g=GAME,q=g.qs[g.i];if(g.done)return;const el=$('#o'+j);if(q.opts[j].val){el.classList.add('good');good()}else{el.classList.add('bad');el.disabled=true;wrong()}}
+function chip(el){const g=GAME,q=g.qs[g.i];if(g.done)return;if(el.textContent===q.words[g.next]){g.next++;el.remove();$('#built').insertAdjacentHTML('beforeend',`<span>${q.words[g.next-1]}</span>`);if(g.next===q.words.length)good()}else{el.classList.remove('bad');void el.offsetWidth;el.classList.add('bad');wrong()}}
+const PRAISE=['أحسنتِ يا جود! 🌟','ممتاز! 👏','شاطرة يا جود! 💖','رائع جدًا! 🎉','برافو! ⭐'];
+function good(){const g=GAME,q=g.qs[g.i];g.done=true;ding();burst();if(g.first){g.score++;STARS++;save()}
+$('#fb').innerHTML=`<div class="ok">${rnd(PRAISE)}</div><div class="en">${q.show||''}</div><button class="b green bigb next" onclick="nextQ()">${g.i+1<g.qs.length?'التالي ⬅️':'النتيجة 🏆'}</button>`;
+setTimeout(()=>speak(q.after),500)}
+function wrong(){GAME.first=false;buzz();$('#fb').innerHTML=`<div class="no">حاولي مرة ثانية يا جود 💪</div>`}
+function nextQ(){GAME.i++;if(GAME.i<GAME.qs.length)return renderQ();const g=GAME,n=g.qs.length;fanfare();burst();
+$('#gbox').innerHTML=`<div class="end"><div class="big">${g.score>=n-1?'🏆':g.score>=n/2?'🥳':'💪'}</div><h2>انتهت اللعبة!</h2><p style="font-size:1.3rem">نجومك: <b>${g.score}</b> من ${n} ⭐</p><p>${g.score>=n-1?'ممتازة يا جود! أنتِ نجمة 🌟':g.score>=n/2?'شاطرة! العبي مرة ثانية لتصبحي أفضل':'لا بأس، ارجعي إلى «تعلّمي» ثم العبي مرة ثانية'}</p>
+<div class="btns"><button class="b pink bigb" onclick="startGame(${g.sec})">🔁 العبي مرة ثانية</button><button class="b gray" onclick="secView(${g.sec},'learn')">📖 تعلّمي</button><button class="b blue" onclick="home()">🏠 الرئيسية</button></div></div>`}
+
+/* ---------- الامتحان الشفهي ---------- */
+let TEST={};
+function tWhatIsThis(){const t=rnd([...CLASS,...BAG]);return {q:"What is this?",qtr:"وت إز ذِس؟",qar:"ما هذا؟",pic:t.pic,a:`This is a ${t.en}.`,atr:`ذِس إز أ ${t.tr}`,aar:`هذا ${t.ar}.`,keys:[t.en]}}
+function tColour(){const t=rnd(COLS);return {q:"What colour is it?",qtr:"وت كَلَر إز إت؟",qar:"ما لونه؟",pic:t.pic,a:`It is ${t.en}.`,atr:`إت إز ${t.tr}`,aar:`لونه ${t.ar}.`,keys:[t.en]}}
+function tTime(){const t=rnd(TIMES);return {q:"What is the time?",qtr:"وت إز ذا تايم؟",qar:"كم الساعة؟",pic:t.pic,a:t.en,atr:t.tr,aar:t.ar+'.',keys:[`${NUMS[t.h][0]}|${t.h}`]}}
+function tBird(){const t=rnd(PREPS);return {q:"Where is the bird?",qtr:"وير إز ذا بيرد؟",qar:"أين العصفور؟",pic:t.pic,a:t.en,atr:t.str,aar:t.sar+'.',keys:[t.p.split(' ').pop()]}}
+function tLetter(){const t=rnd(LETTERS);return {q:"What is this letter?",qtr:"وت إز ذِس لِتَر؟",qar:"ما هذا الحرف؟",pic:`<span class="glyph" style="font-size:80px">${t.L}${t.L.toLowerCase()}</span>`,a:t.L,asay:t.say,atr:t.n,aar:`هذا حرف ${t.L} — صوته ${t.s}`}}
+function tRead(){const t=rnd([...CLASS,...BAG]);return {q:"Read this word.",qtr:"ريد ذِس وِرد",qar:"اقرئي هذه الكلمة.",pic:`<span class="bigword">${t.en}</span>`,a:t.en,atr:t.tr,aar:t.ar,keys:[t.en]}}
+function tPoint(){const t=rnd(CLASS);const list=shuffle([t,...shuffle(CLASS.filter(x=>x!==t)).slice(0,3)]);return {q:`Point to the ${t.en}.`,qtr:`پوينت تو ذا ${t.tr}`,qar:`أشيري إلى ${t.ar}.`,point:list.map(x=>({pic:x.pic,val:x===t})),a:t.en,atr:t.tr,aar:t.ar}}
+function startTest(){stop();const me=shuffle(QA().me).slice(0,5);const others=shuffle([()=>rnd(QA().class),tWhatIsThis,tColour,tTime,tBird,tLetter,tRead,tPoint,()=>QA().sky[0],()=>QA().bag[0]]).slice(0,5).map(f=>f());
+TEST={qs:[me[0],...shuffle([...me.slice(1),...others])],i:0,res:[]};SAYS=[];
+app.innerHTML=`<div class="top"><button class="back" onclick="home()">→ رجوع</button><h2>🎤 الامتحان الشفهي</h2></div><div class="parent">👨‍👩‍👧 <b>لولي الأمر:</b> السؤال يُقرأ بالصوت، وجود تجيب بصوت عالٍ. ثم اضغطوا «الإجابة النموذجية» للمقارنة، واختاروا ✅ أو 🔁.</div><div id="gbox"></div>`;renderT()}
+function renderT(){const t=TEST,q=t.qs[t.i];t.first=true;
+let h=`<div class="prog"><div style="width:${t.i/t.qs.length*100}%"></div></div><div class="qhead">سؤال ${t.i+1} من ${t.qs.length}</div><div class="tbox">${q.pic?`<div class="pic big ${q.pic.includes('viewBox="0 0 200')?'scene':''}">${q.pic}</div>`:''}<div class="en big">${q.q}</div><div class="tr">${q.qtr}</div><div class="ar">${q.qar}</div>
+<div class="btns"><button class="b blue" onclick="S(${R(q.qsay||q.q)})">🔊 أعيدي السؤال</button><button class="b purple" onclick="S(${R(q.qsay||q.q)},1)">🐢 ببطء</button></div>`;
+if(q.point){h+=`<div class="opts pic">${q.point.map((o,j)=>`<button class="opt" id="p${j}" onclick="tPick(${j})"><div class="pic">${o.pic}</div></button>`).join('')}</div><div class="fb" id="fb"></div>`}
+else{h+=`<div class="saybox">🗣️ جاوبي بصوت عالٍ يا جود</div><div class="btns">${SR&&q.keys?`<button class="b pink bigb" id="mic" onclick="tMic(this)">🎙️ جاوبي بصوتك</button>`:''}<button class="b green bigb" onclick="tReveal()">👀 الإجابة النموذجية</button></div><div class="heard" id="theard"></div>
+<div class="ans hide" id="tans"><div class="en big">${q.a}</div><div class="tr">${q.atr}</div><div class="ar">${q.aar}</div><div class="btns"><button class="b orange" onclick="S(${R(q.asay||q.a)})">🔊 اسمعي</button><button class="b purple" onclick="S(${R(q.asay||q.a)},1)">🐢 ببطء</button></div>
+<div class="grade"><button class="b green bigb" onclick="grade(true)">✅ جاوبت صح</button><button class="b orange bigb" onclick="grade(false)">🔁 تحتاج تدريب</button></div></div>`}
+h+=`</div>`;$('#gbox').innerHTML=h;scrollTo(0,0);setTimeout(()=>speak(q.qsay||q.q),400)}
+function tReveal(){$('#tans').classList.remove('hide');const q=TEST.qs[TEST.i];speak(q.asay||q.a)}
+function tMic(btn){const q=TEST.qs[TEST.i],hd=$('#theard');listen(q.keys,btn,(ok,t)=>{if(ok){ding();burst();hd.innerHTML=`<span style="color:#2a8a3e">🌟 إجابة صحيحة! سمعتك: <span class="en">"${t}"</span></span>`;$('#tans').classList.remove('hide')}else if(ok===null){hd.innerHTML='🎙️ لم أسمع جيدًا، حاولي مرة ثانية'}else{buzz();hd.innerHTML=`سمعت: <span class="en">"${t}"</span> — حاولي مرة ثانية 💪`}})}
+function tPick(j){const t=TEST,q=t.qs[t.i],el=$('#p'+j);if(q.point[j].val){el.classList.add('good');ding();burst();$('#fb').innerHTML=`<div class="ok">${rnd(PRAISE)}</div>`;speak(`The ${q.a}.`);const f=t.first;setTimeout(()=>grade(f),1500)}else{t.first=false;el.classList.add('bad');el.disabled=true;buzz();$('#fb').innerHTML=`<div class="no">حاولي مرة ثانية 💪</div>`}}
+function grade(ok){const t=TEST;if(t.locked)return;t.locked=true;setTimeout(()=>t.locked=false,300);t.res.push({q:t.qs[t.i],ok});if(ok){STARS++;save()}t.i++;if(t.i<t.qs.length)return renderT();
+const sc=t.res.filter(r=>r.ok).length,n=t.qs.length,bad=t.res.filter(r=>!r.ok);fanfare();burst();
+$('#gbox').innerHTML=`<div class="end"><div class="big">${sc>=n-1?'🏆':sc>=n/2?'🥳':'💪'}</div><h2>انتهى الامتحان!</h2><p style="font-size:1.4rem">النتيجة: <b>${sc}</b> من ${n}</p><p>${sc>=n-1?'ممتازة يا جود! جاهزة للامتحان 🌟':'شاطرة! راجعي هذه الأسئلة ثم أعيدي الامتحان'}</p>
+${bad.length?`<div class="prac"><b>🔁 تحتاج تدريب:</b>${bad.map(r=>`<div class="en">${r.q.q}</div>`).join('')}</div>`:''}
+<div class="btns"><button class="b pink bigb" onclick="startTest()">🔁 امتحان جديد</button><button class="b blue" onclick="home()">🏠 الرئيسية</button></div></div>`}
+
+home();
+</script>
+</body>
+</html>
