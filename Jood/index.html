@@ -111,8 +111,8 @@ h3{margin:16px 0 8px;color:#a0005a}
 <script>
 const $=s=>document.querySelector(s);
 const app=$('#app');
-let AGE=9,STARS=0;
-try{AGE=+localStorage.getItem('joud_age')||9;STARS=+localStorage.getItem('joud_stars')||0}catch(e){}
+let AGE=10,STARS=0;
+try{AGE=+localStorage.getItem('joud_age')||10;STARS=+localStorage.getItem('joud_stars')||0}catch(e){}
 function save(){try{localStorage.setItem('joud_stars',STARS);localStorage.setItem('joud_age',AGE)}catch(e){}}
 function setAge(v){AGE=+v;save()}
 const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
@@ -170,15 +170,15 @@ const CLASS=[
 {en:"desk",tr:"دِسك",ar:"درج / طاولة",pic:SVG.desk},{en:"window",tr:"ويندو",ar:"شبّاك",pic:SVG.window},
 {en:"wall",tr:"وول",ar:"حائط",pic:E("🧱")},{en:"lamp",tr:"لامب",ar:"لمبة",pic:E("💡")},
 {en:"board",tr:"بورد",ar:"سبّورة",pic:SVG.board},{en:"basket",tr:"باسكِت",ar:"سلّة",pic:E("🧺")}];
-const BAG=[{en:"book",tr:"بوك",ar:"كتاب",pic:E("📕")},{en:"pen",tr:"بِن",ar:"قلم حبر",pic:E("🖊️")},{en:"pencil",tr:"بِنسِل",ar:"قلم رصاص",pic:E("✏️")},{en:"bag",tr:"باق",ar:"شنطة",pic:E("🎒")}];
+const BAG=[{en:"book",tr:"بوك",ar:"كتاب",pic:E("📕")},{en:"pen",tr:"بِن",ar:"قلم حبر",pic:E("🖊️")}];
 const SKY=[{en:"a star",tr:"أ ستار",ar:"نجمة",pic:E("⭐")},{en:"the sun",tr:"ذا صن",ar:"الشمس",pic:E("☀️")},{en:"the moon",tr:"ذا مون",ar:"القمر",pic:E("🌙")}];
-const COLS=[["red","رِد","أحمر","#e53935"],["blue","بلو","أزرق","#1e6fe0"],["green","قرين","أخضر","#2e9d46"],["yellow","يلو","أصفر","#ffd21f"],["black","بلاك","أسود","#222"],["white","وايت","أبيض","#ffffff"]].map(([en,tr,ar,c])=>({en,tr,ar,pic:bookSVG(c)}));
+const COLS=[["red","رِد","أحمر","#e53935"]].map(([en,tr,ar,c])=>({en,tr,ar,pic:bookSVG(c)}));
 const PREPS=[{p:"on",tr:"أون",ar:"فوق",o:"box"},{p:"under",tr:"أندَر",ar:"تحت",o:"table"},{p:"in",tr:"إن",ar:"داخل",o:"box"},{p:"in front of",tr:"إن فرونت أوف",ar:"أمام",o:"box"},{p:"behind",tr:"بِهايند",ar:"خلف / وراء",o:"box"},{p:"next to",tr:"نِكست تو",ar:"بجانب",o:"box"}].map(x=>({...x,pic:`<div class="scene">${scene(x.p,x.o)}</div>`,en:`The bird is ${x.p} the ${x.o}.`,str:`ذا بيرد إز ${x.tr} ذا ${x.o==='box'?'بوكس':'تيبِل'}`,sar:`العصفور ${x.ar} ${x.o==='box'?'الصندوق':'الطاولة'}`}));
 const PREP_ON_TABLE={p:"on",tr:"أون",ar:"فوق",o:"table",pic:`<div class="scene">${scene('on','table')}</div>`,en:"The bird is on the table.",str:"ذا بيرد إز أون ذا تيبِل",sar:"العصفور فوق الطاولة"};
 const nameSay={A:"ay",B:"bee",C:"see",D:"dee",E:"ee",F:"ef",G:"jee",H:"aitch",I:"eye",J:"jay",K:"kay",L:"el",M:"em",N:"en",O:"oh",P:"pee",Q:"cue",R:"are",S:"ess",T:"tee",U:"you",V:"vee",W:"double you",X:"ex",Y:"why",Z:"zed"};
 const LETTERS=[["A","إي","أَ","apple","آبِل","🍎"],["B","بي","بْ","ball","بول","⚽"],["C","سي","كْ","cat","كات","🐱"],["D","دي","دْ","dog","دوق","🐶"],["E","إي","إِ","egg","إق","🥚"],["F","إف","فْ","fish","فِش","🐟"],["G","جي","قْ (مثل ق السودانية)","goat","قوت","🐐"],["H","إيتش","هْ","hat","هات","🎩"],["I","آي","إِ","insect","إنسِكت","🐞"],["J","جيه","جْ","juice","جوس","🧃"],["K","كيه","كْ","kite","كايت","🪁"],["L","إل","لْ","lion","لايون","🦁"],["M","إم","مْ","moon","مون","🌙"],["N","إن","نْ","nose","نوز","👃"],["O","أو","أُ","orange","أورِنج","🍊"],["P","پي","پْ (باء مع نفخة هواء)","pen","پِن","🖊️"],["Q","كيو","كْو","queen","كوين","👸"],["R","آر","رْ","rabbit","رابِت","🐰"],["S","إس","سْ","sun","صن","☀️"],["T","تي","تْ","tree","تري","🌳"],["U","يو","أَ","umbrella","أمبريلا","☂️"],["V","ڤي","ڤْ (فاء بصوت)","van","ڤان","🚐"],["W","دَبِليو","وْ","watch","واتش","⌚"],["X","إكس","كْس","box","بوكس","📦"],["Y","واي","يْ","yo-yo","يويو","🪀"],["Z","زِد","زْ","zebra","زيبرا","🦓"]].map(([L,n,s,w,wt,e])=>({L,n,s,w,wt,e,say:nameSay[L]}));
-const DIG=[{d:"ch",s:"تش",w:"chair",wt:"تشير",e:"🪑"},{d:"sh",s:"ش",w:"ship",wt:"شِب",e:"🚢"},{d:"th",s:"ث",w:"three",wt:"ثري",e:"3️⃣"},{d:"th",s:"ذ",w:"the",wt:"ذا",e:"👉"},{d:"ph",s:"ف",w:"phone",wt:"فون",e:"📱"}];
-const TIMES=[...Array(12)].map((_,i)=>{const h=i+1;return {h,en:`It is ${NUMS[h][0]} o'clock.`,tr:`إت إز ${NUMS[h][1]} أو كلوك`,ar:`الساعة ${AR_H[h]}`,pic:clockSVG(h)}});
+const DIG=[{d:"ch",s:"تش"},{d:"sh",s:"ش"},{d:"th",s:"ث"},{d:"the",s:"ذ",say:"the"},{d:"ph",s:"ف"}];
+const TIMES=[3].map(h=>{return {h,en:`It is ${NUMS[h][0]} o'clock.`,tr:`إت إز ${NUMS[h][1]} أو كلوك`,ar:`الساعة ${AR_H[h]}`,pic:clockSVG(h)}});
 
 function QA(){const n=NUMS[AGE];return {
 me:[
@@ -194,10 +194,10 @@ me:[
 class:[
 {q:"What is in the class?",qtr:"وت إز إن ذا كلاس؟",qar:"ماذا يوجد في الفصل؟",a:"There is a door, a window and a board.",atr:"ذير إز أ دور، أ ويندو آند أ بورد",aar:"يوجد باب وشبّاك وسبّورة.",keys:["door|window|board|desk|fan|lamp|basket|wall"]},
 {q:"What can you see in the class?",qtr:"وت كان يو سي إن ذا كلاس؟",qar:"ماذا ترين في الفصل؟",a:"I can see a door.",atr:"آي كان سي أ دور",aar:"أرى بابًا.",keys:["see","door|window|board|desk|fan|lamp|basket|wall"]},
-{q:"How many windows are there in the class?",qtr:"هاو مِني ويندوز آر ذير إن ذا كلاس؟",qar:"كم شبّاكًا في الفصل؟",a:"There are 2 windows in the class.",asay:"There are two windows in the class.",atr:"ذير آر تو ويندوز إن ذا كلاس",aar:"يوجد شبّاكان في الفصل.",keys:["two|2|to|too","windows"]},
-{q:"How many fans are there in the class?",qtr:"هاو مِني فانز آر ذير إن ذا كلاس؟",qar:"كم مروحة في الفصل؟",a:"There is 1 fan in the class.",asay:"There is one fan in the class.",atr:"ذير إز وَن فان إن ذا كلاس",aar:"توجد مروحة واحدة في الفصل.",keys:["one|1","fan"]}],
+{q:"How many windows are there in the class?",qtr:"هاو مِني ويندوز آر ذير إن ذا كلاس؟",qar:"كم شبّاكًا في الفصل؟",pic:`<div class="row">${SVG.window.repeat(2)}</div>`,a:"There are 2 windows in the class.",asay:"There are two windows in the class.",atr:"ذير آر تو ويندوز إن ذا كلاس",aar:"يوجد شبّاكان في الفصل.",keys:["two|2|to|too","windows"]},
+{q:"How many fans are there in the class?",qtr:"هاو مِني فانز آر ذير إن ذا كلاس؟",qar:"كم مروحة في الفصل؟",pic:`<div class="row">${SVG.fan}</div>`,a:"There is 1 fan in the class.",asay:"There is one fan in the class.",atr:"ذير إز وَن فان إن ذا كلاس",aar:"توجد مروحة واحدة في الفصل.",keys:["one|1","fan"]}],
 bag:[
-{q:"What is in the bag?",qtr:"وت إز إن ذا باق؟",qar:"ماذا يوجد في الشنطة؟",a:"There is a book, a pen and a pencil.",atr:"ذير إز أ بوك، أ پِن آند أ پِنسِل",aar:"يوجد كتاب وقلم حبر وقلم رصاص.",keys:["book|pen|pencil"]},
+{q:"What is in the bag?",qtr:"وت إز إن ذا باق؟",qar:"ماذا يوجد في الشنطة؟",a:"There is a book and a pen.",atr:"ذير إز أ بوك آند أ پِن",aar:"يوجد كتاب وقلم.",keys:["book|pen"]},
 {q:"Have you got a book?",qtr:"هاف يو قوت أ بوك؟",qar:"هل عندك كتاب؟",a:"Yes, I have.",atr:"يِس، آي هاف",aar:"نعم، عندي.",keys:["yes"]}],
 sky:[
 {q:"What is in the sky?",qtr:"وت إز إن ذا سكاي؟",qar:"ماذا يوجد في السماء؟",a:"A star, the sun and the moon.",atr:"أ ستار، ذا صن آند ذا مون",aar:"نجمة والشمس والقمر.",keys:["star|sun|moon"]}],
@@ -206,7 +206,7 @@ bird:[
 colours:[
 {q:"What colour is it?",qtr:"وت كَلَر إز إت؟",qar:"ما لونه؟",pic:COLS[0].pic,a:"It is red.",atr:"إت إز رِد",aar:"لونه أحمر.",keys:["red"]}],
 time:[
-{q:"What is the time?",qtr:"وت إز ذا تايم؟",qar:"كم الساعة؟",pic:TIMES[2].pic,a:"It is three o'clock.",atr:"إت إز ثري أو كلوك",aar:"الساعة الثالثة.",keys:["three|3"]}]
+{q:"What is the time?",qtr:"وت إز ذا تايم؟",qar:"كم الساعة؟",pic:TIMES[0].pic,a:"It is three o'clock.",atr:"إت إز ثري أو كلوك",aar:"الساعة الثالثة.",keys:["three|3"]}]
 }}
 function ALLQA(){return Object.values(QA()).flat()}
 
@@ -228,9 +228,9 @@ function qColour(t){const m=mkOpts(COLS,t,3,x=>`<span class="en">It is ${x.en}.<
 function qClock(t){const m=mkOpts(TIMES,t,3,x=>`<span class="en">${x.en}</span>`);return {kind:'pick',prompt:'🕒 What is the time? — كم الساعة؟',audio:'What is the time?',visual:`<div class="pic big">${t.pic}</div>`,opts:m.opts,optType:'word',hint:hintOf(m.list),after:t.en,show:t.en}}
 function qScenePick(t){const m=mkOpts(PREPS,t,3,picOpt);return {kind:'pick',prompt:'🎧 Where is the bird? اسمعي واختاري الصورة',audio:t.en,visual:`<div class="en">${t.en}</div><div class="tr">${t.str}</div>`,opts:m.opts,optType:'pic',after:t.en,show:t.en}}
 function qSceneWord(t){const m=mkOpts(PREPS,t,4,x=>`<span class="en">${x.p}</span>`);return {kind:'pick',prompt:'🐦 Where is the bird? — أين العصفور؟',audio:'Where is the bird?',visual:`<div class="pic big scene">${scene(t.p,t.o)}</div><div class="en">The bird is ...... the ${t.o}.</div>`,opts:m.opts,optType:'word',hint:m.list.map(x=>`<span class="en">${x.p}</span> = <span class="tr">${x.tr}</span> (${x.ar})`).join('<br>'),after:t.en,show:t.en}}
-function qLetter(t){const list=shuffle([t,...shuffle(LETTERS.filter(x=>x!==t)).slice(0,3)]);return {kind:'pick',prompt:'🔤 What is this letter? اسمعي واختاري الحرف',audio:t.say,opts:list.map(x=>({html:`<span class="glyph">${x.L}${x.L.toLowerCase()}</span>`,val:x===t})),optType:'letter',after:`${t.say}. ${t.w}.`,show:`${t.L} — ${t.w}`}}
+function qLetter(t){/*letter only*/const list=shuffle([t,...shuffle(LETTERS.filter(x=>x!==t)).slice(0,3)]);return {kind:'pick',prompt:'🔤 What is this letter? اسمعي واختاري الحرف',audio:t.say,opts:list.map(x=>({html:`<span class="glyph">${x.L}${x.L.toLowerCase()}</span>`,val:x===t})),optType:'letter',after:t.say,show:t.L}}
 function qLetterWord(t){const list=shuffle([t,...shuffle(LETTERS.filter(x=>x!==t)).slice(0,3)]);return {kind:'pick',prompt:'🔤 اختاري الصورة التي تبدأ بهذا الحرف',audio:t.say,visual:`<div class="glyph" style="font-size:80px">${t.L}${t.L.toLowerCase()}</div><div class="tr">يُقرأ: ${t.n} — صوته: ${t.s}</div>`,opts:list.map(x=>({html:`<div class="pic">${E(x.e)}</div>`,val:x===t})),optType:'pic',after:`${t.say}. ${t.w}.`,show:`${t.L} — ${t.w}`}}
-function qDig(t){return {kind:'pick',prompt:'🔊 حرفان = صوت واحد! اسمعي الكلمة: بأي حرفين تبدأ؟',audio:t.w,visual:`<div class="pic big">${E(t.e)}</div><div class="tr">${t.wt}</div>`,opts:shuffle(['ch','sh','th','ph']).map(d=>({html:`<span class="glyph" style="font-size:44px">${d}</span>`,val:d===t.d})),optType:'letter',after:t.w,show:t.w}}
+function qDig(t){const list=shuffle([t,...shuffle(DIG.filter(x=>x!==t)).slice(0,3)]);return {kind:'pick',prompt:'✌️ حرفان = صوت واحد! ما صوت هذين الحرفين؟',audio:t.say,visual:`<div class="glyph" style="font-size:80px">${t.d}</div>`,opts:list.map(x=>({html:`<span class="tr" style="font-size:2rem">${x.s}</span>`,val:x===t})),optType:'letter',after:t.say,show:`${t.d} = ${t.s}`}}
 function take(gen,arr,n){return shuffle(arr).slice(0,n).map(gen)}
 
 /* ---------- الأقسام ---------- */
@@ -243,11 +243,11 @@ const SECTIONS=[
 {id:'class',icon:'🏫',title:'في الفصل',en:'In the class',c:'#1e88e5',
  note:'💡 <b>There is</b> (ذير إز) لشيء واحد، و<b>There are</b> (ذير آر) لأكثر من واحد.<br>مثال: There is 1 fan — There are 2 windows.',
  items:()=>CLASS.map(vocab),qa:()=>QA().class,
- game:()=>shuffle([...take(t=>qListen(CLASS,t,`Point to the ${t.en}.`,'👉 Point to... = أشيري إلى... اسمعي واختاري'),CLASS,2),...take(t=>qPicWord(CLASS,t),CLASS,2),...take(t=>qWordPic(CLASS,t),CLASS,1),qHowMany(),qHowMany(),(t=>qOrder(`I can see a ${t.en}.`,null,`آي كان سي أ ${t.tr}`,`أرى ${t.ar}`,t.pic))(rnd(CLASS))])},
+ game:()=>shuffle([...take(t=>qListen(CLASS,t,`Point to the ${t.en}.`,'👉 Point to... = أشيري إلى... اسمعي واختاري'),CLASS,2),...take(t=>qPicWord(CLASS,t),CLASS,2),...take(t=>qWordPic(CLASS,t),CLASS,1),qQA(QA().class[2]),qQA(QA().class[3]),(t=>qOrder(`I can see a ${t.en}.`,null,`آي كان سي أ ${t.tr}`,`أرى ${t.ar}`,t.pic))(rnd(CLASS))])},
 {id:'bag',icon:'🎒',title:'في الشنطة',en:'In the bag',c:'#2eaa4a',
- note:'نقول <b>a</b> (أ) قبل الشيء الواحد: a book, a pen, a pencil.',
+ note:'نقول <b>a</b> (أ) قبل الشيء الواحد: a book, a pen.',
  items:()=>BAG.map(vocab),qa:()=>QA().bag,
- game:()=>{const q=QA().bag[0];return shuffle([...take(t=>qListen(BAG,t),BAG,2),...take(t=>qPicWord(BAG,t),BAG,2),...take(t=>qWordPic(BAG,t),BAG,1),...take(t=>qWhatIsThis(BAG,t),BAG,1),qQA(q),qOrder(q.a,null,q.atr,q.aar,E('🎒'))])}},
+ game:()=>{const q=QA().bag[0],P=[...BAG,...CLASS];return shuffle([...BAG.map(t=>qListen(P,t)),...BAG.map(t=>qPicWord(P,t)),...BAG.map(t=>qWhatIsThis(P,t)),qQA(q),qOrder(q.a,null,q.atr,q.aar,E('🎒'))])}},
 {id:'sky',icon:'🌙',title:'في السماء',en:'In the sky',c:'#5c6bc0',
  note:'💡 نقول <b>a star</b> لأن النجوم كثيرة، ونقول <b>the sun</b> و<b>the moon</b> لأنه توجد شمس واحدة وقمر واحد.',
  items:()=>SKY.map(vocab),qa:()=>QA().sky,
@@ -257,17 +257,17 @@ const SECTIONS=[
  items:()=>[...PREPS,PREP_ON_TABLE].map(x=>({pic:x.pic,en:x.p,tr:x.tr,ar:x.ar+' — '+x.sar,say:x.en})),qa:()=>QA().bird,
  game:()=>shuffle([...take(qScenePick,PREPS,3),...take(qSceneWord,PREPS,3),...take(t=>qOrder(t.en,null,t.str,t.sar,t.pic),PREPS,2)])},
 {id:'letters',icon:'🔤',title:'الحروف وأصواتها',en:'Letters & sounds',c:'#8e44ad',
- note:'اضغطي على الحرف لتسمعي اسمه وكلمة تبدأ به. تحت كل حرف: اسمه، وصوته بالعربي.',
+ note:'اضغطي على الحرف لتسمعي اسمه. تحت كل حرف: اسمه، وصوته بالعربي.',
  items:()=>[],qa:()=>[],
- game:()=>shuffle([...take(qLetter,LETTERS,3),...take(qLetterWord,LETTERS,2),...take(qDig,DIG,3)])},
+ game:()=>shuffle([...take(qLetter,LETTERS,5),...take(qDig,DIG,3)])},
 {id:'colours',icon:'🎨',title:'الألوان',en:'Colours',c:'#00acc1',
  note:'السؤال: <span class="en">What colour is it?</span> — الإجابة: <span class="en">It is red.</span>',
  items:()=>COLS.map(x=>({...vocab(x),say:`It is ${x.en}.`})),qa:()=>QA().colours,
- game:()=>shuffle([...take(t=>qListen(COLS,t),COLS,3),...take(qColour,COLS,3),...take(t=>qOrder(`It is ${t.en}.`,null,`إت إز ${t.tr}`,`لونه ${t.ar}`,t.pic),COLS,2)])},
+ game:()=>[qWhatIsThis([...BAG,...CLASS].map(x=>x.en==='book'?{...x,pic:COLS[0].pic}:x).filter((x,i,a)=>a.findIndex(y=>y.en===x.en)===i),{...BAG[0],pic:COLS[0].pic}),qQA(QA().colours[0]),qOrder('It is red.',null,'إت إز رِد','لونه أحمر',COLS[0].pic)]},
 {id:'time',icon:'🕒',title:'كم الساعة؟',en:'The time',c:'#f4511e',
  note:'السؤال: <span class="en">What is the time?</span> — الإجابة: <span class="en">It is three o\'clock.</span><br>العقرب الأحمر القصير يشير إلى الساعة.',
  items:()=>TIMES.map(t=>({pic:t.pic,en:t.en,tr:t.tr,ar:t.ar,say:t.en})),qa:()=>QA().time,
- game:()=>shuffle([...take(qClock,TIMES,3),...take(t=>qListen(TIMES,t,t.en,'🎧 اسمعي واختاري الساعة الصحيحة'),TIMES,3),...take(t=>qOrder(t.en,null,t.tr,t.ar,t.pic),TIMES,2)])},
+ game:()=>[qQA(QA().time[0]),qOrder(TIMES[0].en,null,TIMES[0].tr,TIMES[0].ar,TIMES[0].pic)]},
 {id:'test',icon:'🎤',title:'الامتحان الشفهي',en:'Oral test',c:'linear-gradient(135deg,#ff3d7f,#ff7a00)',wide:true}];
 
 /* ---------- الصفحة الرئيسية ---------- */
@@ -288,10 +288,10 @@ app.innerHTML=`<div class="top"><button class="back" onclick="home()">→ رجو
 if(tab==='game')return startGame(i);
 let h=s.note?`<div class="note">${s.note}</div>`:'';
 if(s.id==='letters'){
- h+=`<div class="cards">${LETTERS.map(l=>`<button class="card" onclick="S(${R(`${l.say}. ${l.w}.`)})"><span class="spk">🔊</span><span class="glyph">${l.L}${l.L.toLowerCase()}</span><div class="tr">اسمه: ${l.n}</div><div class="ar">صوته: ${l.s}</div><div style="font-size:30px">${l.e}</div><div class="en">${l.w}</div><div class="tr">${l.wt}</div></button>`).join('')}</div>
- <h3>✌️ حرفان ← صوت واحد</h3><div class="cards">${DIG.map(d=>`<button class="card" onclick="S(${R(d.w)})"><span class="spk">🔊</span><span class="glyph" style="font-size:46px">${d.d}</span><div class="tr" style="font-size:1.3rem">= ${d.s}</div><div style="font-size:34px">${d.e}</div><div class="en">${d.w}</div><div class="tr">${d.wt}</div></button>`).join('')}</div>
+ h+=`<div class="cards">${LETTERS.map(l=>`<button class="card" onclick="S(${R(l.say)})"><span class="spk">🔊</span><span class="glyph">${l.L}${l.L.toLowerCase()}</span><div class="tr">اسمه: ${l.n}</div><div class="ar">صوته: ${l.s}</div></button>`).join('')}</div>
+ <h3>✌️ حرفان ← صوت واحد</h3><div class="cards">${DIG.map(d=>`<button class="card" ${d.say?`onclick="S(${R(d.say)})"`:''}>${d.say?'<span class="spk">🔊</span>':''}<span class="glyph" style="font-size:46px">${d.d}</span><div class="tr" style="font-size:1.6rem">= ${d.s}</div></button>`).join('')}</div>
  <h3>❓ أسئلة الامتحان</h3>`;
- QAS=[{q:"What is this letter?",qtr:"وت إز ذِس لِتَر؟",qar:"ما هذا الحرف؟",pic:`<span class="glyph">Bb</span>`,a:"B",asay:"bee",atr:"بي",aar:"هذا حرف B.",keys:["b|bee|be"]},{q:"Read this word.",qtr:"ريد ذِس وِرد",qar:"اقرئي هذه الكلمة.",pic:`<span class="en" style="font-size:1.6rem">ship</span>`,a:"ship",atr:"شِب",aar:"سفينة",keys:["ship"]}];
+ QAS=[{q:"What is this letter?",qtr:"وت إز ذِس لِتَر؟",qar:"ما هذا الحرف؟",pic:`<span class="glyph">Bb</span>`,a:"B",asay:"bee",atr:"بي",aar:"هذا حرف B.",keys:["b|bee|be"]},{q:"Read this word.",qtr:"ريد ذِس وِرد",qar:"اقرئي هذه الكلمة.",pic:`<span class="en" style="font-size:1.6rem">door</span>`,a:"door",atr:"دور",aar:"باب",keys:["door"]}];
 }else{
  const it=s.items();
  if(it.length)h+=`<div class="cards">${it.map(x=>`<button class="card" onclick="S(${R(x.say)})"><span class="spk">🔊</span><div class="pic">${x.pic}</div><div class="en">${x.en}</div><div class="tr">${x.tr}</div><div class="ar">${x.ar}</div></button>`).join('')}</div>`;
